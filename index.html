@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blaine's Brass and More</title>
+    <title>Blaine's Brass and More - Vintage Brass Instruments</title>
+    <meta name="description" content="Discover and shop a curated collection of vintage brass instruments including trumpets, cornets, mellophones, and flugelhorns at Blaine's Brass and More.">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Move these styles to your style.css file for better organization */
         .quick-links {
             text-align: center;
             margin-top: 40px;
@@ -57,6 +59,22 @@
             height: auto;
             border-radius: 8px;
         }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #e67e22; /* A more inviting color for the CTA */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #d35400;
+        }
     </style>
 </head>
 
@@ -65,9 +83,9 @@
         <nav aria-label="Main Navigation">
             <div class="nav-container">
                 <div class="logo">Blaine's Brass and More</div>
-                <button class="hamburger" aria-label="Toggle Menu">☰</button>
+                <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">☰</button>
                 <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="about.html">Our Story</a></li>
                     <li><a href="contact.html">Connect</a></li>
                     <li><a href="store.html">Shop</a></li>
@@ -86,19 +104,21 @@
     <main>
         <section class="hero">
             <div class="hero-image">
-                <img src="your-image.jpg" alt="Vintage Brass Instruments" />
+                <img src="your-image.jpg" alt="A collection of beautifully restored vintage brass instruments including trumpets and a flugelhorn." />
             </div>
             <h1>Vintage Brass, Modern Soul</h1>
-            <p>Discover the resonant voice of history. Trumpets, cornets, mellophones, and flugelhorns, reborn.</p>
+            <p class="hero-tagline">Discover the resonant voice of history. Trumpets, cornets, mellophones, and flugelhorns, reborn.</p>
             <a href="/store.html" class="cta-button">Find Your Instrument</a>
         </section>
 
         <section class="home-content">
-            <p>Welcome to <strong>Blaine's Brass and More</strong>, your curated online hub for exceptional vintage brass instruments. We're dedicated to bringing you a refined selection of trumpets, cornets, mellophones, flugelhorns, and more, each with a story to tell and a unique sonic signature.</p>
-            <p>Dive into our online store to explore instruments that resonate with your musical vision, or delve deeper into our passion for preserving brass heritage on our "Our Story" page. We're here to bridge the gap between you and your ideal instrument, supporting your musical journey every step of the way.</p>
+            <h2>Welcome to Blaine's Brass and More</h2>
+            <p>At <strong>Blaine's Brass and More</strong>, we are passionate about preserving the legacy of vintage brass instruments. Our online collection features a carefully selected range of trumpets, cornets, mellophones, flugelhorns, and more, each with its own unique history and character.</p>
+            <p>Whether you're a seasoned musician looking for a classic sound, a collector seeking a rare gem, or a student starting your musical journey, we're confident you'll find an instrument that inspires you. Explore our <a href="/store.html">online store</a> to view our current inventory, or visit our <a href="/about.html">"Our Story" page</a> to learn more about our dedication to quality and craftsmanship. Our team is here to <a href="/contact.html">connect</a> with you and provide support every step of the way.</p>
         </section>
 
         <section class="quick-links">
+            <h2>Explore Our Site</h2>
             <a href="/store.html">Shop Instruments</a>
             <a href="/about.html">Learn Our Story</a>
             <a href="/contact.html">Contact Us</a>
@@ -116,6 +136,15 @@
 
             hamburger.addEventListener('click', function () {
                 menu.classList.toggle('show');
+                this.setAttribute('aria-expanded', menu.classList.contains('show')); // Update aria-expanded
+            });
+
+            // Close the menu if the user clicks outside of it
+            document.addEventListener('click', function (event) {
+                if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                    menu.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
             });
         });
     </script>
