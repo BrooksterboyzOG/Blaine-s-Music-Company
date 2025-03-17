@@ -1,4 +1,5 @@
 /* styles.css */
+/* Existing styles from previous iterations */
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +44,7 @@ nav {
     list-style: none;
     display: flex;
     gap: 25px;
-    align-items: center; /* Vertically align items in the menu */
+    align-items: center;
 }
 
 .menu li a {
@@ -61,7 +62,7 @@ nav {
 }
 
 .menu li a i {
-    font-size: 20px; /* Style the shopping cart icon */
+    font-size: 20px;
     margin-left: 10px;
 }
 
@@ -100,7 +101,7 @@ main {
 .hero {
     background: #f9f3e8;
     text-align: center;
-    padding: 150px 30px; /* Increased hero padding */
+    padding: 150px 30px;
 }
 
 .hero-content {
@@ -109,7 +110,7 @@ main {
 }
 
 .hero h1 {
-    font-size: 4em; /* Larger hero heading */
+    font-size: 4em;
     margin-bottom: 30px;
     color: #2c3e50;
     font-weight: 700;
@@ -117,7 +118,7 @@ main {
 }
 
 .hero .hero-tagline {
-    font-size: 1.5em; /* Larger tagline */
+    font-size: 1.5em;
     margin-bottom: 50px;
     color: #777;
     line-height: 1.9;
@@ -127,9 +128,9 @@ main {
     display: inline-block;
     background-color: #e67e22;
     color: white;
-    padding: 20px 45px; /* Larger button */
+    padding: 20px 45px;
     text-decoration: none;
-    border-radius: 12px; /* More rounded button */
+    border-radius: 12px;
     font-weight: 600;
     font-size: 20px;
     transition: background-color 0.3s ease, transform 0.2s ease-in-out;
@@ -217,7 +218,7 @@ main {
 }
 
 .home-content > div {
-    padding: 30px 0; /* Removed background and border */
+    padding: 30px 0;
 }
 
 .home-content h2 {
@@ -225,7 +226,7 @@ main {
     margin-bottom: 30px;
     color: #e67e22;
     font-weight: 600;
-    text-align: left; /* Align "About Us" heading to left */
+    text-align: left;
 }
 
 .home-content h3 {
@@ -262,7 +263,7 @@ footer {
     background-color: #333;
     color: #f0f0f0;
     padding: 60px 30px;
-    text-align: left; /* Align footer content to left */
+    text-align: left;
 }
 
 .footer-content {
@@ -452,5 +453,128 @@ footer {
 
     .footer-bottom {
         text-align: center;
+    }
+}
+
+/* Styles for the About Us page */
+.about-hero {
+    background: linear-gradient(135deg, #e0f2fe, #a5d8ff); /* Similar to homepage hero */
+    text-align: center;
+    padding: 120px 30px;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.about-hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.about-section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #e67e22; /* Using the accent color */
+    text-align: left;
+}
+
+.blaine-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blaine-info p {
+    font-size: 1.15em;
+    line-height: 1.9;
+    color: #666;
+}
+
+.about-section ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 15px;
+    font-size: 1.15em;
+    color: #666;
+    position: relative;
+    padding-left: 25px;
+}
+
+.about-section ul li strong {
+    color: #333;
+}
+
+.about-section ul li::before {
+    content: "\2022"; /* Bullet point */
+    color: #3498db; /* Using a blue color for bullets */
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+/* Responsive adjustments for Blaine info */
+@media (max-width: 768px) {
+    .blaine-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 100px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 3em;
+    }
+
+    .about-content {
+        padding: 0 20px;
+    }
+
+    .about-section h2 {
+        font-size: 2.2em;
     }
 }
