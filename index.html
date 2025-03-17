@@ -7,6 +7,7 @@
     <title>Blaine's Brass and More - Vintage Brass Instruments</title>
     <meta name="description" content="Discover and shop a curated collection of vintage brass instruments including trumpets, cornets, mellophones, and flugelhorns at Blaine's Brass and More.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -28,39 +29,88 @@
                             <li><a href="privacy.html">Data</a></li>
                         </ul>
                     </li>
+                    <li><a href="/cart.html" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="home-content">
-            <div class="intro">
-                <h2>Welcome to Blaine's Brass and More</h2>
-                <p>We believe that every musician deserves an instrument with character and history. At <strong>Blaine's Brass and More</strong>, we meticulously source and offer a refined selection of vintage brass instruments, including trumpets, cornets, mellophones, and flugelhorns. Each instrument in our collection has been chosen for its quality, unique sonic signature, and the stories it holds.</p>
-            </div>
-
-            <div class="mission">
-                <h3>Our Passion</h3>
-                <p>Our mission is to connect musicians with instruments that inspire and elevate their craft. We are dedicated to preserving the heritage of brass instruments and providing a seamless experience for you to find your ideal musical companion. Whether you're a seasoned professional or just beginning your musical journey, we're here to support you.</p>
-            </div>
-
-            <div class="explore">
-                <h3>Explore Our Collection</h3>
-                <p>Browse our <a href="/store.html">online store</a> to discover the current selection of vintage brass instruments. Learn about our commitment to quality and restoration on our <a href="/about.html">"Our Story" page</a>. If you have any questions or need assistance, please don't hesitate to <a href="/contact.html">connect with us</a>.</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Vintage Brass, Modern Soul</h1>
+                <p class="hero-tagline">Discover the resonant voice of history. Explore our curated collection of exceptional vintage brass instruments.</p>
+                <a href="/store.html" class="cta-button">Browse Our Instruments</a>
             </div>
         </section>
 
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Find Your Voice in History</h1>
-                <p class="hero-tagline">Explore our curated collection of exceptional vintage brass instruments, each with a unique story and resonant soul.</p>
-                <a href="/store.html" class="cta-button">Discover Our Instruments</a>
+        <section class="featured-instruments">
+            <h2>Featured Instruments</h2>
+            <div class="instrument-grid">
+                <div class="instrument-card">
+                    <img src="placeholder-trumpet.jpg" alt="Vintage Trumpet">
+                    <h3>Classic 1950s Trumpet</h3>
+                    <p>A beautifully preserved trumpet with a warm tone.</p>
+                    <a href="/store/trumpet1.html" class="view-details">View Details</a>
+                </div>
+                <div class="instrument-card">
+                    <img src="placeholder-cornet.jpg" alt="Antique Cornet">
+                    <h3>Rare 1890s Cornet</h3>
+                    <p>An antique cornet perfect for collectors.</p>
+                    <a href="/store/cornet1.html" class="view-details">View Details</a>
+                </div>
+                <div class="instrument-card">
+                    <img src="placeholder-mellophone.jpg" alt="Vintage Mellophone">
+                    <h3>Professional Mellophone</h3>
+                    <p>A high-quality mellophone for serious musicians.</p>
+                    <a href="/store/mellophone1.html" class="view-details">View Details</a>
+                </div>
+                </div>
+        </section>
+
+        <section class="home-content">
+            <div class="intro">
+                <h2>About Blaine's Brass and More</h2>
+                <p>We are passionate about connecting musicians with exceptional vintage brass instruments. Each instrument in our collection is carefully sourced, often restored, and chosen for its unique character and sound. We believe that owning a vintage instrument is not just about playing music; it's about owning a piece of musical history.</p>
+            </div>
+
+            <div class="our-promise">
+                <h3>Our Promise</h3>
+                <p>We are committed to providing high-quality instruments and excellent customer service. We strive to ensure that every musician finds the perfect instrument to inspire their musical journey. Browse our online store or contact us with any questions – we're here to help you find your voice.</p>
             </div>
         </section>
 
     </main>
     <footer>
-        <p>&copy; 2025 Blaine's Brass and More. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Blaine's Brass and More</h3>
+                <p>Your trusted source for exceptional vintage brass instruments. We bring history to your music.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/about.html">Our Story</a></li>
+                    <li><a href="/store.html">Shop</a></li>
+                    <li><a href="/contact.html">Connect</a></li>
+                    <li><a href="/faq.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> Email: info@blainesbrass.com</p>
+                <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Blaine's Brass and More. All rights reserved.</p>
+            <p><a href="/terms.html">Terms of Service</a> | <a href="/privacy.html">Privacy Policy</a></p>
+        </div>
     </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -69,10 +119,9 @@
 
             hamburger.addEventListener('click', function () {
                 menu.classList.toggle('show');
-                this.setAttribute('aria-expanded', menu.classList.contains('show')); // Update aria-expanded
+                this.setAttribute('aria-expanded', menu.classList.contains('show'));
             });
 
-            // Close the menu if the user clicks outside of it
             document.addEventListener('click', function (event) {
                 if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
                     menu.classList.remove('show');
