@@ -1,4 +1,3 @@
-
 /* styles.css */
 /* General Styles */
 * {
@@ -390,7 +389,7 @@ footer {
 
 /* About Us Page Styles */
 .about-hero {
-    background: linear-gradient(135deg, #e0f2fe, #a5d8ff);
+    background: #f9f3e8; /* Consistent hero background color */
     text-align: center;
     padding: 120px 30px;
 }
@@ -408,7 +407,7 @@ footer {
 
 .about-hero p {
     font-size: 1.3em;
-    color: #555;
+    color: #777; /* Consistent with homepage hero tagline color */
 }
 
 .about-content {
@@ -428,7 +427,7 @@ footer {
 .about-section h2 {
     font-size: 2.8em;
     margin-bottom: 25px;
-    color: #e67e22;
+    color: #e67e22; /* Using the accent color for consistency */
     text-align: left;
 }
 
